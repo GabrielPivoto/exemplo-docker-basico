@@ -1,4 +1,13 @@
-# Um exemplo básico de Docker 🐋 
+# Um exemplo básico de Docker - Alura 🐋 
+
+## Como buildar:
+
+```
+docker build -t aplicacao/app-node:1.0 .
+```
+* -t para etiquetar a imagem
+* :1.0 para explicitar a versão
+* . para ser executado no contexto do diretório atual.
 
 ## Explicando o Dockerfile:
 
