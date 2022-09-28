@@ -20,6 +20,16 @@ FROM node:14
 WORKDIR /app-node
 ````
 
+* Define a porta a ser usada (ARG só é usado em tempo de build da imagem):
+````
+ARG PORT_BUILD=6000
+````
+
+* Passar o valor da porta efetivamente para dentro do container a ser criado:
+````
+ENV PORT=$PORT_BUILD
+````
+
 * Copia todo o conteúdo do diretório atual para o diretório do container:
 ```
 COPY . .
