@@ -30,6 +30,11 @@ ARG PORT_BUILD=6000
 ENV PORT=$PORT_BUILD
 ````
 
+* Expõe a porta que está send usada pelo container (não é a porta do PC local):
+````
+EXPOSE $PORT_BUILD
+````
+
 * Copia todo o conteúdo do diretório atual para o diretório do container:
 ```
 COPY . .
