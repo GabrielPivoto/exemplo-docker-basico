@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  aleatorio:
+    image: gabrielicc/app-node:1.0
+    container_name: meu-app
+    networks:
+      - rede-teste
+    ports:
+      - 8081:6000
+
+networks:
+  rede-teste:
+    driver: bridge
